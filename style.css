@@ -10,10 +10,13 @@ nav {
 }
 .topnav {
     color: #fff;
-    background-color: #1f1d158c;
+    background-color: #783e80;
     width:100%;
     position: fixed;
     z-index: 10;    
+}
+img.top-images {
+    padding: 0px 0px 0px 27px;
 }
 p.text-banner-01 {
     text-align: center;
@@ -43,6 +46,10 @@ li.top-type {
     margin: -53px 170px 21px 170px;
 }
      /* topnav-end */
+
+
+
+
      section.banner-01 {
         background-image: url(./about-us-bg.png);
         background-repeat: no-repeat;
@@ -79,42 +86,44 @@ li.top-type {
     }
 
 
-    table.table.table-bordered {
-        margin-top: 315px;
-    }
 
-    
 
-p.top-td {
-    font-size: 20px;
-    /* padding: 4px 44px; */
-    text-align: center;
-    color: #FF6A73;
-    
-    font-style: italic;
-    visibility: visible;
-    font-family: "Pacifico script=latin rev=2";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.10909;
 
+td.tab-col-0 {
+    width: 205px;
+    height: 210px;
 }
-
-
-
-
+/* table.table-one {
+    margin-left: 17%;
+    margin-right: -19%;
+    margin-top: 48%;
+} */
+h3.text-top {
+    font-size:16px;
+    margin-left: 10px;
+    width: 126px;
+}
+p.top-td {
+    margin-left: 11px;
+    font-size: 20px;
+    color: #1dc11d;
+} 
      /* why choose us wala part */
      section.choice.bg-dark {
         width: 100%;
         height: 636px;
         background-color: #1b1a1af0;
-        margin-top: 59%;
+        margin-top: 0%;
     }
     img.choose-img {
         margin-top: 173px;
         width: 100%;
         height: 380px;
+    }
+    .mySlides {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 458px;
     }
 
   /* slider   */
@@ -137,116 +146,81 @@ h3.choice-text-01 {
         margin: 41px 0px -30px 0px;
     }
     ul.choose-list {
-        list-style-image: url(star.png);
-        margin: 77px 0px 2px 63px;
+        /* list-style-image: url(star.png); */
+        margin: 76px 0px 2px -43px;
         list-style-position: inside;
+        list-style-type: none;
+    }
+    img.list-img {
+        padding: 1px 9px 0px 0px;
     }
     li.list-02 {
         color: #fff;
         font-size: 17px;
     }
-
     h2 {
-        color: #333;
+        color: #000;
+        font-size: 26px;
+        font-weight: 300;
         text-align: center;
         text-transform: uppercase;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
         position: relative;
-        margin: 30px 0 60px;
+        margin: 30px 0 70px;
     }
-    h2::after {
-        content: "";
-        width: 100px;
-        position: absolute;
-        margin: 0 auto;
-        height: 3px;
-        background: #8fbc54;
-        left: 0;
-        right: 0;
-        bottom: -10px;
-    }
-    .col-center {
-        margin: 0 auto;
-        float: none !important;
-    }
+    
     .carousel {
         margin: 50px auto;
         padding: 0 70px;
     }
     .carousel .item {
         color: #999;
-        font-size: 14px;
-        text-align: center;
         overflow: hidden;
-        min-height: 290px;
+        min-height: 120px;
+        font-size: 13px;
     }
-    .carousel .item .img-box {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
-        padding: 5px;
-        border: 1px solid #ddd;
-        border-radius: 50%;
-    }
-    .carousel .img-box img {
-        width: 100%;
-        height: 100%;
+    .carousel .media img {
+        width: 100px;
+        height: 80px;
         display: block;
-        border-radius: 50%;
+        border-radius: 20%;
     }
     .carousel .testimonial {
-        padding: 30px 0 10px;
+        padding: 0 15px 0 60px ;
+        position: relative;
     }
-    .carousel .overview {	
-        font-style: italic;
+    .carousel .testimonial::before {
+        content: '\93';
+        color: #e2e2e2;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 54px;
+        position: absolute;
+        left: 15px;
+        top: 0;
     }
     .carousel .overview b {
         text-transform: uppercase;
-        color: #7AA641;
-    }
-    .carousel .carousel-control {
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        top: 50%;
-        background: none;
-    }
-    .carousel-control i {
-        font-size: 68px;
-        line-height: 42px;
-        position: absolute;
-        display: inline-block;
-        color: rgba(0, 0, 0, 0.8);
-        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        color: #1c47e3;
     }
     .carousel .carousel-indicators {
         bottom: -40px;
     }
     .carousel-indicators li, .carousel-indicators li.active {
-        width: 10px;
-        height: 10px;
-        margin: 1px 3px;
+        width: 18px;
+        height: 18px;
         border-radius: 50%;
+        margin: 1px 3px;
     }
     .carousel-indicators li {	
-        background: #999;
-        border-color: transparent;
-        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+        background: #e2e2e2;
+        border: 4px solid #fff;
     }
-    .carousel-indicators li.active {	
-        background: #555;		
-        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    .carousel-indicators li.active {
+        color: #fff;
+        background: #1c47e3;    
+        border: 5px double;    
     }
-
     /* slider-end */
-
-
-    .carousel-inner {
-    background-image: url(../img/our-team-bg.png);
-    height: 500px;
-    
-}
     p.img-pf-line {
         color: #fff;
         text-align: center;
@@ -256,22 +230,24 @@ h3.choice-text-01 {
         margin: 64px 42px;
     }
     
-   section.third-part {
-    background-color: #772323;
-    width: 100%; 
-    height: 443px;
-    margin-top: 17%;
-}
+    section.third-part {
+        background-color: #772323;
+        width: 100%;
+        height: 443px;
+        margin-top: 17%;
+        padding: 18px 0px 0px 17px;
+        position: absolute;    
+        }
 h1.img-pf-line12 {
     padding-top: 10%;
     color: #fff;
 }
 h3.text2 {
-    text-align: center;
+   text-align: center;
     color: #079407;
     font-size: 33px;
-    margin-top: -43px;
-    /* margin-left: -63px; */
+    margin: -45px 16px 0px 0px;
+    font-family: cursive;
 }
 section.table {
     margin-top: -28%;
@@ -292,6 +268,22 @@ height:100%;
 width:100%;
 position:absolute;
 }
+table.table-one.bg-white {
+    margin-top: 50%;
+    margin-left: 21%;
+    background-color: #f5f2f2;
+}
+.topnavbar {
+    position: absolute;
+    margin-top: -125px;
+}
+.mySlides {
+    background-image: url(our-team-bg.png);
+}
+
+
+
+
 .contact{
         padding: 4%;
         height: 400px;
